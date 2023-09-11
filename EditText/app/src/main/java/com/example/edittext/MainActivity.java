@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    /*public void comprobarRadio(View v){
+    public void comprobarRadio(View v){
         String tipo = "";
         if (rb1.isChecked()){
             tipo = rb1.getText().toString();
@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
             tipo = rb2.getText().toString();
         }
         Toast.makeText(MainActivity.this, "Radio : "+ tipo, Toast.LENGTH_SHORT).show();
-    }*/
+    }
 
     public void comprobarRb1(){
         rb1.setOnClickListener(new View.OnClickListener() {
@@ -165,5 +165,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(MainActivity.this, "Usted a otorgado: "+rbar1.getRating()+" estrellas!!!", Toast.LENGTH_LONG).show();
 
     }
+
+    //Prueba de commit
 
 }
