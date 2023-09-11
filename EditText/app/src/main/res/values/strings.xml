@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">EditText</string>
+
+    <string-array name="colores">
+        <item>Blanco</item>
+        <item>Azul</item>
+        <item>Rojo</item>
+    </string-array>
+
+</resources>

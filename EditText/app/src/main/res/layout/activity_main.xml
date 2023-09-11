@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="30dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="ToggleButton" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Ingrese ID"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="capturarID"
+            android:text="..."
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinnerColores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/colores"
+    />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Interior" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exterior" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar ProgressBar"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/cb1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Opción 1" />
+
+    <CheckBox
+        android:id="@+id/cb2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Opción 2" />
+
+    <CheckBox
+        android:id="@+id/cb3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Opción 3" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="comprobarCBox"
+        android:text="Comprobar"
+        android:textStyle="bold" />
+
+    <RatingBar
+        android:id="@+id/rbar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:numStars="5" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="cuantasEstrellas"
+        android:text="Enviar"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
